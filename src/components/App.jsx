@@ -35,7 +35,7 @@ export default function App() {
         <>
             <Header darkMode={darkMode} changeMode={changeMode} />
             <Routes>
-                <Route path="/" element={<AboutPage darkMode={darkMode} />} />
+                <Route path="/*" element={<AboutPage darkMode={darkMode} />} />
                 <Route path="/project" element={<></>} />
                 <Route path="/contact" element={<></>} />
             </Routes>

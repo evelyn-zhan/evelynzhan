@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Header({ darkMode, changeMode }) {
-    const currentPath = useLocation();
+    const currentPath = useLocation()
 
     return (
         <header className="px-16 py-10">

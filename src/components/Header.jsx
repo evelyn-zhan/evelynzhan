@@ -5,8 +5,8 @@ export default function Header({ darkMode, changeMode }) {
     const currentPath = useLocation()
 
     return (
-        <header className="px-3.5 lg:px-16 py-5 lg:py-10">
-            <nav className="flex flex-row justify-end items-center gap-x-7 lg:gap-x-10 text-lg lg:text-xl font-medium">
+        <header className="px-3.5 lg:px-20 py-5 lg:py-8">
+            <nav className="flex flex-row justify-end items-center gap-x-7 lg:gap-x-10 text-lg lg:text-lg font-medium">
                 <Link to="/" className={`${currentPath.pathname === "/" || currentPath.pathname === "/about/overview" || currentPath.pathname === "/about/education" || currentPath.pathname === "/about/experience" || currentPath.pathname === "/about/achievements" || currentPath.pathname === "/about/certification" ? (darkMode ? 'text-primary' : 'text-darker') : ''} hover:font-bold transition-all ease-in-out duration-600`}>About</Link>
                 <Link to="/project" className={`${currentPath.pathname === "/project" ? (darkMode ? 'text-primary' : 'text-darker') : ''} hover:font-bold transition-all ease-in-out duration-600`}>Projects</Link>
                 <Link to="/contact" className={`${currentPath.pathname === "/contact" ? (darkMode ? 'text-primary' : 'text-darker') : ''} hover:font-bold transition-all ease-in-out duration-600`}>Contact</Link>

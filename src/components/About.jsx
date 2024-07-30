@@ -6,7 +6,7 @@ export default function About({ darkMode }) {
 
     return (
         <>
-            <div className="px-3.5 lg:px-16 py-6 lg:py-8 flex flex-col gap-y-2.5">
+            <div className="px-3.5 lg:px-20 py-6 lg:py-8 flex flex-col gap-y-2.5">
                 <h1 className="text-2xl lg:text-3xl font-extrabold">Howdy! I am <span className={darkMode ? 'text-primary' : 'text-darker'}>Evelyn</span>.</h1>
                 <div>
                     <p>💻 Computer Science '23</p>

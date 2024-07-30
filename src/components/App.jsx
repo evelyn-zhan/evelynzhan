@@ -27,7 +27,7 @@ export default function App() {
     }
 
     function changeMode() {
-        setDarkMode(!darkMode);
+        setDarkMode(!darkMode)
     }
 
     return (

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Header from './Header.jsx';
+import AboutPage from '../pages/AboutPage.jsx';
 
 export default function App() {
     const [ darkMode, setDarkMode ] = useState(() => {
@@ -34,7 +35,7 @@ export default function App() {
         <>
             <Header darkMode={darkMode} changeMode={changeMode} />
             <Routes>
-                <Route path="/" element={<></>} />
+                <Route path="/" element={<AboutPage darkMode={darkMode} />} />
                 <Route path="/project" element={<></>} />
                 <Route path="/contact" element={<></>} />
             </Routes>

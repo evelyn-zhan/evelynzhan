@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Overview() {
     return (
-        <div className="px-3.5 lg:px-20 flex flex-col gap-y-6 text-justify">
+        <div className="flex flex-col gap-y-6 text-justify">
             <p>Hi, there! I'm <span className="font-bold">Evelyn</span>.</p>
             <p>
                 I am an <span className="font-bold">undergraduate student</span> at <span className="font-bold">Universitas Mikroskil</span>, majoring

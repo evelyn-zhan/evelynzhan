@@ -27,8 +27,8 @@ export default function Overview({ darkMode }) {
                     <SkillCard logo="ri-css3-fill" colorCode="#3C99DC" skill="CSS3" darkMode={darkMode} />
                     <SkillCard logo="ri-tailwind-css-fill" colorCode="#06b6d4" skill="TailwindCSS" darkMode={darkMode} />
                     <SkillCard logo="ri-javascript-fill" colorCode="#f7df1e" skill="JavaScript" darkMode={darkMode} />
-                    <SkillCard logo="ri-reactjs-fill" colorCode="#61DBFB" skill="ReactJS" darkMode={darkMode} />
-                    <SkillCard logo="ri-nodejs-fill" colorCode="#3c873a" skill="NodeJS" darkMode={darkMode} />
+                    <SkillCard logo="ri-reactjs-line" colorCode="#61DBFB" skill="ReactJS" darkMode={darkMode} />
+                    <SkillCard logo="ri-nodejs-line" colorCode="#3c873a" skill="NodeJS" darkMode={darkMode} />
                 </div>
             </div>
         </div>

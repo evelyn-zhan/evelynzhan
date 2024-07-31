@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SkillCard from '../components/SkillCard.jsx';
+
 export default function Overview({ darkMode }) {
     return (
         <div className="text-justify">
@@ -21,30 +23,12 @@ export default function Overview({ darkMode }) {
             <div className="mt-10">
                 <h2 className={`text-xl lg:text-2xl font-extrabold ${darkMode ? 'text-primary' : 'text-darker'}`}>Skills and Technology</h2>
                 <div className="mt-5 flex flex-row flex-wrap items-center gap-4 lg:text-lg">
-                    <div className={`px-3.5 py-2 w-60 lg:w-52 flex flex-row items-center gap-x-2.5 border-solid border-[1px] rounded-md ${darkMode ? 'border-primary' : 'border-darker'}`}>
-                        <i className="ri-html5-fill text-xl lg:text-2xl text-[#FF5733]"></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div className={`px-3.5 py-2 w-60 lg:w-52 flex flex-row items-center gap-x-2.5 border-solid border-[1px] rounded-md ${darkMode ? 'border-primary' : 'border-darker'}`}>
-                        <i className="ri-css3-fill text-xl lg:text-2xl text-[#3C99DC]"></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div className={`px-3.5 py-2 w-60 lg:w-52 flex flex-row items-center gap-x-2.5 border-solid border-[1px] rounded-md ${darkMode ? 'border-primary' : 'border-darker'}`}>
-                        <i className="ri-tailwind-css-fill text-xl lg:text-2xl text-[#06b6d4]"></i>
-                        <span>TailwindCSS</span>
-                    </div>
-                    <div className={`px-3.5 py-2 w-60 lg:w-52 flex flex-row items-center gap-x-2.5 border-solid border-[1px] rounded-md ${darkMode ? 'border-primary' : 'border-darker'}`}>
-                        <i className="ri-javascript-fill text-xl lg:text-2xl text-[#f7df1e]"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div className={`px-3.5 py-2 w-60 lg:w-52 flex flex-row items-center gap-x-2.5 border-solid border-[1px] rounded-md ${darkMode ? 'border-primary' : 'border-darker'}`}>
-                        <i className="ri-reactjs-line text-xl lg:text-2xl text-[#61DBFB]"></i>
-                        <span>ReactJS</span>
-                    </div>
-                    <div className={`px-3.5 py-2 w-60 lg:w-52 flex flex-row items-center gap-x-2.5 border-solid border-[1px] rounded-md ${darkMode ? 'border-primary' : 'border-darker'}`}>
-                        <i className="ri-nodejs-fill text-xl lg:text-2xl text-[#3c873a]"></i>
-                        <span>NodeJS</span>
-                    </div>
+                    <SkillCard logo="ri-html5-fill" colorCode="#FF5733" skill="HTML5" darkMode={darkMode} />
+                    <SkillCard logo="ri-css3-fill" colorCode="#3C99DC" skill="CSS3" darkMode={darkMode} />
+                    <SkillCard logo="ri-tailwind-css-fill" colorCode="#06b6d4" skill="TailwindCSS" darkMode={darkMode} />
+                    <SkillCard logo="ri-javascript-fill" colorCode="#f7df1e" skill="JavaScript" darkMode={darkMode} />
+                    <SkillCard logo="ri-reactjs-fill" colorCode="#61DBFB" skill="ReactJS" darkMode={darkMode} />
+                    <SkillCard logo="ri-nodejs-fill" colorCode="#3c873a" skill="NodeJS" darkMode={darkMode} />
                 </div>
             </div>
         </div>

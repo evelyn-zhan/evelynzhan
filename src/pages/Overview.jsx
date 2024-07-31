@@ -1,5 +1,6 @@
 import React from 'react';
 
+import skills from '../utils/data.js';
 import SkillCard from '../components/SkillCard.jsx';
 
 export default function Overview({ darkMode }) {
@@ -23,12 +24,11 @@ export default function Overview({ darkMode }) {
             <div className="mt-10">
                 <h2 className={`text-xl lg:text-2xl font-extrabold ${darkMode ? 'text-primary' : 'text-darker'}`}>Skills and Technology</h2>
                 <div className="mt-5 flex flex-row flex-wrap items-center gap-4 lg:text-lg">
-                    <SkillCard logo="ri-html5-fill" colorCode="#FF5733" skill="HTML5" darkMode={darkMode} />
-                    <SkillCard logo="ri-css3-fill" colorCode="#3C99DC" skill="CSS3" darkMode={darkMode} />
-                    <SkillCard logo="ri-tailwind-css-fill" colorCode="#06b6d4" skill="TailwindCSS" darkMode={darkMode} />
-                    <SkillCard logo="ri-javascript-fill" colorCode="#f7df1e" skill="JavaScript" darkMode={darkMode} />
-                    <SkillCard logo="ri-reactjs-line" colorCode="#61DBFB" skill="ReactJS" darkMode={darkMode} />
-                    <SkillCard logo="ri-nodejs-line" colorCode="#3c873a" skill="NodeJS" darkMode={darkMode} />
+                    {
+                        skills.map(skill => {
+                            return <SkillCard key={skill.id} logo={skill.logo} colorCode={skill.colorCode} skill={skill.name} darkMode={darkMode} />
+                        })
+                    }
                 </div>
             </div>
         </div>

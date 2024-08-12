@@ -44,14 +44,15 @@ const education = [
         name: "Universitas Mikroskil",
         info: "Bachelor's Degree • Computer Science",
         date: "Sep 2023 - Now",
-        grade: "Current GPA: 4.00 / 4.00"
+        grade: "GPA: 4.00 / 4.00",
+        desc: "Achieved the Top 1% Students Award in the First Semester and received a half-year scholarship.",
     },
     {
         id: 2,
         image: "/images/methodist-3.jpeg",
         name: "SMAS Methodist-3 Medan",
         info: "Senior High School • Natural Science",
-        date: "July 2021 - May 2023",
+        date: "Jul 2021 - May 2023",
     }
 ];
 

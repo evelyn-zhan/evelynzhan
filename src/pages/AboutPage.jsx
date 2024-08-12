@@ -7,7 +7,7 @@ import Education from '../pages/Education.jsx';
 
 export default function AboutPage({ darkMode }) {
     return (
-        <div className="px-3.5 lg:px-20 py-6 lg:py-8">
+        <div className="px-3.5 lg:px-24 py-6 lg:py-8">
             <About darkMode={darkMode} />
             <Routes>
                 <Route path="/*" element={<Overview darkMode={darkMode} />} />

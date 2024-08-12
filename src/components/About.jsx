@@ -15,7 +15,7 @@ export default function About({ darkMode }) {
                 </div>
             </div>
 
-            <nav className="mt-8 py-1 flex flex-row gap-x-6 lg:gap-x-10 text-lg font-semibold text-grey overflow-x-scroll lg:overflow-x-auto">
+            <nav className="mt-6 py-1 flex flex-row gap-x-6 lg:gap-x-10 text-lg font-semibold text-grey overflow-x-scroll lg:overflow-x-auto">
                 <Link to="/" className={`${location.pathname === "/" ? (darkMode ? 'text-primary' : 'text-darker') : (darkMode ? 'hover:text-white' : 'hover:text-black')} flex flex-row gap-x-2 items-center trasnition-all ease-in-out duration-600`}>
                     <i className="ri-search-line"></i>
                     <span>Overview</span>

@@ -35,6 +35,24 @@ const skills = [
         logo: "ri-nodejs-line",
         colorCode: "#3c873a"
     }
-]
+];
 
-export default skills
+const education = [
+    {
+        id: 1,
+        image: "/images/mikroskil.png",
+        name: "Universitas Mikroskil",
+        info: "Bachelor's Degree • Computer Science",
+        date: "Sep 2023 - Now",
+        grade: "Current GPA: 4.00 / 4.00"
+    },
+    {
+        id: 2,
+        image: "/images/methodist-3.jpeg",
+        name: "SMAS Methodist-3 Medan",
+        info: "Senior High School • Natural Science",
+        date: "July 2021 - May 2023",
+    }
+];
+
+export { skills, education };

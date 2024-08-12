@@ -20,7 +20,7 @@ export default function Overview({ darkMode }) {
             </p>
 
             <div className="mt-8 lg:mt-10">
-                <h2 className={`text-xl lg:text-2xl font-extrabold ${darkMode ? 'text-primary' : 'text-darker'}`}>Skills and Technology</h2>
+                <h2 className={`text-xl lg:text-2xl font-bold ${darkMode ? 'text-primary' : 'text-darker'}`}>Skills and Technology</h2>
                 <div className="mt-5 flex flex-row flex-wrap items-center gap-4 lg:text-lg">
                     {
                         skills.map(skill => {

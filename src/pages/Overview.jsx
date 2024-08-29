@@ -24,7 +24,7 @@ export default function Overview({ darkMode }) {
                 <div className="mt-5 flex flex-row flex-wrap items-center gap-4 lg:text-lg">
                     {
                         skills.map(skill => {
-                            return <SkillComponent key={skill.id} logo={skill.logo} colorCode={skill.colorCode} skill={skill.name} darkMode={darkMode} />
+                            return <SkillComponent key={skill.id} svg={skill.svg} skill={skill.name} darkMode={darkMode} />
                         })
                     }
                 </div>
